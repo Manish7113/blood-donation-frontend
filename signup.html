@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<style>
+    body{
+        
+        background-image:url("ii.jpeg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        
+
+        padding: 0px;
+        margin: 0%;
+        background-color: white;
+
+    }
+    #name{
+        padding-top: 20px;
+        margin-left: 20px;
+        margin-top: 0px;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        color: red;
+       
+        display: inline;
+    }
+    #logo{
+        width: 80px;
+        display: inline;
+        float: right;
+        overflow: hidden;
+
+    }
+   
+    .header{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: inline;
+
+    }
+    .intro{
+        background-color: white;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    #qoute{
+        
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: inline;
+
+        margin:auto;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       text-align: center;
+       text-transform: capitalize;
+        padding: 23px;
+        color:red;
+        margin-top: 0px;
+        padding-top:0px ;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
+    }
+    .other{
+        margin-top: 0;
+        padding-top: 200px;
+    }
+    
+    .slot{
+        
+        width: 40%;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid gray;
+        border-radius: 10px ;
+        margin-left: 20%;
+    }
+    .inpu{
+        width: 70%;
+        height: 20px;
+        margin: 5px;
+        border-color: gray;
+        border-style: none none double none ; 
+        padding: 5px;
+    
+    }
+    
+    .inpu:hover{
+        border: 2px dotted gray;
+    }
+    #bslot{
+        text-align: center;
+        color: gray;
+        text-decoration: dotted;
+        text-transform: capitalize;
+        font-size: larger;
+    }
+    #sub{
+        text-align: center;
+        width: 100%;
+        height: 30px;
+    }
+    #sub:hover{
+        color:orangered;
+        border: 2px solid gray;
+        border-radius: 10px;  
+    }
+    
+    footer{
+        
+        color:black;
+        margin: 10px;
+        width: 100%;
+        background-color: black;
+        float: right;
+        display: inline;
+    }
+    .social{margin: 10px;
+        display: inline;
+
+
+    } 
+    .social p{
+        color: white;
+        margin-left: 30px;
+    }
+    .logo1{
+        width: 20px;
+    }
+    .social a{
+        text-decoration: none;
+        color: white;
+    
+    }
+    .social a:hover{
+        color: aliceblue;
+        font-size: larger;
+    }
+</style>
+<body>
+    
+        <header>
+            <div class="header">
+        <div class="intro">
+            <p id="name" class="intro">Clot Contribution    </p>
+            <img src="ii.jpeg" alt="image not found" id="logo" class="intro">
+        </div>
+        <hr>
+        <div id="qoute" class="intro">
+            <p>Sign up</p>
+    
+        </div>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="other">
+        <div class="slot">
+            <p id="bslot">Enter your details</p>
+            <form action="submit.php">
+            <label for="nam">Username :</label>
+            <input type="text" id="nam" class="inpu" required>
+            <br>
+            <label for="pass">Password :</label>
+            <input type="password" id="pass" class="inpu" required>
+            <br>
+            <label for="cpass">Confirm Password :</label>
+            <input type="password" id="cpass" class="inpu" required>
+            <br>
+            <label for="mob1">Mobile :</label>
+            <input type="number" id="mob1" class="inpu" required>
+            <br>
+            <label for="0">Gender :</label>
+            <label for="male">Male</label>
+            <input type="radio"  id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio"  id="female" name="gender">
+            <br>
+            <label for="age">Age :</label>
+            <input type="number" id="age" min="18" max="75" class="inpu" required>
+            <br>
+            <label for="emal">Email :</label>
+            <input type="email" id="emal" class="inpu" required>
+            <br>
+            <div class="btest">
+                <label for="test">Have you tested your blood group :</label>
+                <label for="y">Yes</label>
+                <input type="radio" name="tes" id="y">
+                <label for="n">No</label>
+                <input type="radio" name="tes" id="n"> 
+            </div>
+            <br>
+            <div class="bgroup">
+                <label for="city">Select your Blood group :</label>
+    
+    <select name="blood group" id="blood group" >
+      <option value="A+">A+</option>
+      <option value="B+">B+</option>
+      <option value="A-">A-</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select>
+    <br>
+    <br>
+            <div class="city">
+                <label for="city">Select your City:</label>
+    
+    <select name="city" id="city" required>
+      <option value="Indore">Indore</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Lucknow">Lucknow</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Goa">Goa</option>
+    </select>
+    
+            </div>
+            <br>
+            <div class="area">
+                <label for="area">Select nearest location:</label>
+    
+    <select name="area" id="area" >
+      <option value="Bombay hospital">Bombay hospital</option>
+      <option value="CHL hospital">CHL hospital</option>
+      <option value="Patidar hospital">Patidar hospital</option>
+      <option value="city hospital">City hospital</option>
+      <option value="Dharm">Dharm NGO</option>
+      <option value="Takshila parisar">Takshila parisar camp</option>
+    </select>
+    
+            </div>
+            
+            <label for="profession">Enter your Profession :</label>
+            <input type="text" id="profession" class="inpu" required style="width: 60%;">
+            <br>
+            <br>
+            <input type="submit" id="sub" class="inpu">
+        </form>
+        </div> 
+    </div> 
+</div>
+    </main>
+    
+    <footer>
+        <hr>
+       <div class="social">
+        <p>Connect on</p>
+        <ul>
+            <li><a href="#" class="anch"> <img src="insta.jpeg" alt="image not found" class="logo1"> Instagram</a></li>
+            <li><a href="#" class="anch"> <img src="mail.png" alt="image not found" class="logo1"> Gmail</a></li>
+            <li><a href="#" class="anch"> <img src="fb.jpeg" alt="image not found" class="logo1"> Facebook</a></li>
+            <li><a href="#" class="anch"> <img src="tiwter.jpeg" alt="image not found" class="logo1"> Twitter</a></li>
+            <li><a href="#" class="anch"> <img src="wp.png" alt="image not found" class="logo1"> Whatsapp</a></li>
+        </ul>
+       </div>
+    </footer>
+</body>
+</html>
